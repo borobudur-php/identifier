@@ -30,6 +30,16 @@ class Uuid implements Identifier
     }
 
     /**
+     * Generate new id.
+     *
+     * @return static
+     */
+    public static function generate()
+    {
+        return new static((string) RamseyUuid::uuid4());
+    }
+
+    /**
      * {@inheritdoc}
      */
     public function getScalarValue()
