@@ -17,7 +17,7 @@ use Ramsey\Uuid\Uuid as RamseyUuid;
 /**
  * @author  Iqbal Maulana <iq.bluejack@gmail.com>
  */
-final class Uuid implements Identifier
+class Uuid implements Identifier
 {
     /**
      * @var RamseyUuid
