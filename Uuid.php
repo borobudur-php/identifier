@@ -55,4 +55,9 @@ class Uuid implements Identifier
         return get_class($this) === get_class($other)
             && $this->getScalarValue() === $other->getScalarValue();
     }
+
+    public function __toString(): string
+    {
+        return $this->getScalarValue();
+    }
 }
